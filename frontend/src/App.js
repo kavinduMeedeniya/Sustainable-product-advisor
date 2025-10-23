@@ -18,7 +18,7 @@ function App() {
     setInput('');
 
     try {
-      const response = await axios.post('http://localhost:8000/chat', { message: input });
+      const response = await axios.post('https://sustainable-product-advisor.onrender.com/chat', { message: input });
       const data = response.data;
 
       if (data.error) {
