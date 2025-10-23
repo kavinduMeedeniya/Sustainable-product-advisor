@@ -1,0 +1,26 @@
+{
+    "electronics": {
+        "materials": ["plastic", "metal", "glass", "circuitry", "lithium"],
+        "options": ["Local e-waste recycling center", "Manufacturer take-back program", "Best Buy or Staples drop-off", "Call2Recycle for batteries"]
+    },
+    "clothing": {
+        "materials": ["cotton", "polyester", "wool", "silk", "synthetic blends"],
+        "options": ["Textile recycling bin", "Donation to charity (e.g., Goodwill)", "H&M or Levi's garment recycling program", "Local thrift store drop-off"]
+    },
+    "bags": {
+        "materials": ["recycled polyester", "nylon", "canvas", "TPU-film laminate", "recycled PET", "ripstop nylon"],
+        "options": ["Textile recycling program (e.g., for recycled polyester/nylon)", "Manufacturer take-back (e.g., Patagonia Worn Wear)", "Local drop-off at grocery stores or retailers like REI", "Upcycle into new bags or donate to charities", "TerraCycle recycling box for hard-to-recycle synthetics"]
+    },
+    "textiles": {
+        "materials": ["recycled PET", "non-woven polypropylene", "synthetic fabrics", "blended fibers"],
+        "options": ["Textile collection bins at malls or recycling centers", "Donate to fabric reuse programs", "Repreve or similar recycled polyester programs", "Machine-wash and donate if wearable; otherwise, local municipal textile recycling"]
+    },
+    "plastics": {
+        "materials": ["HDPE", "LDPE", "polypropylene (PP)", "recycled plastic bottles"],
+        "options": ["Grocery store plastic bag/film drop-off (e.g., Walmart, Target)", "Curbside recycling if marked #2 or #4", "TerraCycle mail-back programs for non-standard plastics", "Avoid landfill; clean and bundle for bulk recycling"]
+    },
+    "natural_fibers": {
+        "materials": ["hemp", "jute", "organic cotton", "bamboo", "canvas from natural sources"],
+        "options": ["Home composting (if untreated)", "Textile recycling bin or donation", "Local farmers' market or community compost programs", "Biodegradable waste collection", "Donate to upcycling workshops or charities"]
+    }
+}
