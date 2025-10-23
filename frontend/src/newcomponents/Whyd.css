@@ -1,0 +1,85 @@
+.whyd-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+}
+
+.whyd-content {
+  max-width: 600px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.whyd-headline {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.whyd-headline-highlight {
+  font-weight: 600;
+}
+
+.whyd-description {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whyd-brand-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.whyd-logo {
+  background-color: #fff;
+  color: #000;
+  padding: 8px 16px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+}
+
+.whyd-tagline {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .whyd-content {
+    padding: 20px;
+  }
+  
+  .whyd-headline {
+    font-size: 2rem;
+  }
+  
+  .whyd-description {
+    font-size: 1.1rem;
+  }
+  
+  .whyd-brand-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

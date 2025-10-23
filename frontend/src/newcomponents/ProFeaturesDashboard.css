@@ -1,0 +1,205 @@
+/* ProFeaturesDashboard.css */
+.snd-pro-features-dashboard * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.snd-pro-features-dashboard {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #171717 0%, #161616 50%, #000000 100%);
+  color: white;
+  min-height: 70vh;
+  padding: 60px 40px;
+}
+
+.snd-pro-features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.snd-pro-features-left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.snd-pro-features-main-title {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: white;
+}
+
+.snd-pro-features-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 350px;
+}
+
+.snd-pro-features-source-note {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 200px;
+  line-height: 1.4;
+}
+
+.snd-pro-features-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.snd-pro-features-stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.snd-pro-features-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.snd-pro-features-stat-card:hover::before {
+  left: 100%;
+}
+
+.snd-pro-features-stat-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.snd-pro-features-stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.snd-pro-features-stat-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .snd-pro-features-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .snd-pro-features-stats-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .snd-pro-features-dashboard {
+    padding: 40px 20px;
+  }
+
+  .snd-pro-features-main-title {
+    font-size: 36px;
+  }
+
+  .snd-pro-features-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .snd-pro-features-stat-card {
+    padding: 28px 20px;
+  }
+
+  .snd-pro-features-stat-number {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  .snd-pro-features-description {
+    max-width: 100%;
+  }
+
+  .snd-pro-features-container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .snd-pro-features-dashboard {
+    padding: 30px 15px;
+  }
+
+  .snd-pro-features-main-title {
+    font-size: 28px;
+  }
+
+  .snd-pro-features-stat-number {
+    font-size: 36px;
+  }
+
+  .snd-pro-features-stat-card {
+    padding: 24px 16px;
+  }
+}
+
+/* Animation on load */
+.snd-pro-features-stat-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sndSlideUp 0.6s ease-out forwards;
+}
+
+.snd-pro-features-stat-card:nth-child(1) { animation-delay: 0.1s; }
+.snd-pro-features-stat-card:nth-child(2) { animation-delay: 0.2s; }
+.snd-pro-features-stat-card:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes sndSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.snd-pro-features-left-section > * {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: sndSlideRight 0.8s ease-out forwards;
+}
+
+.snd-pro-features-main-title { animation-delay: 0.2s; }
+.snd-pro-features-description { animation-delay: 0.4s; }
+.snd-pro-features-source-note { animation-delay: 0.6s; }
+
+@keyframes sndSlideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

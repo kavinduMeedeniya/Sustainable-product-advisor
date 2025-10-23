@@ -1,0 +1,257 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.left-panel {
+  width: 30%;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.right-panel {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.chat-container {
+  width: 80%;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.user-message {
+  background-color: #ffffff;
+  margin-left: auto;
+  border: 1px solid rgb(243, 243, 243);
+}
+
+.assistant-message {
+  background-color: #ffffff;
+  margin-right: auto;
+  border: 1px solid rgb(243, 243, 243);
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  margin-right: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button:hover {
+  background-color: #303030;
+}
+
+.product-section {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.product-link {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+}
+
+
+
+
+.network-quality-wrapper {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: transparent;
+  color: #333;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.network-quality-wrapper::before {
+  content: '';
+  background-color: transparent;
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.network-quality-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 40px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.network-quality-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.network-quality-heading {
+  font-size: 36px;
+  font-weight: 500;
+  color: #0089d3;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+.network-quality-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #000;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.network-quality-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.network-quality-footer {
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.network-quality-footer-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.network-quality-logo {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.network-quality-footer-text {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.4;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .app {
+  display: block;
+  height: auto;
+}
+  .network-quality-container {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .network-quality-heading {
+    font-size: 28px;
+  }
+
+  .network-quality-header {
+    margin-bottom: 40px;
+  }
+  .left-panel {
+  width: 90%;
+}
+
+.right-panel {
+  width: 100%;
+  padding-bottom: 5%;
+}
+}
+
+@media (max-width: 480px) {
+  .app {
+  display: block;
+  height: auto;
+}
+  .network-quality-heading {
+    font-size: 24px;
+  }
+  .left-panel {
+  width: 90%;
+}
+
+.right-panel {
+  width: 100%;
+  padding-bottom: 5%;
+}
+}
